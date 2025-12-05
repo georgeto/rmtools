@@ -1624,7 +1624,7 @@ int main( int argc, char* argv[] )
     mCFileStream streamIn( strPath, mEFileOpenMode_Read );
     if ( g_GetFileExt( strPath ).ToLower() == "elex2tpldoc" )
         return TplDocToTpl( streamIn, strPath ) ? 0 : 1;
-    else if ( g_GetFileExt( strPath ).ToLower() == "elexs2ecdoc" )
+    else if ( g_GetFileExt( strPath ).ToLower() == "elex2secdoc" )
         return SecDocToSec( streamIn, strPath ) ? 0 : 1;
     else if ( g_GetFileExt( strPath ).ToLower() == "elex2secmod" )
         return ProcessSecMod( streamIn, strPath ) ? 0 : 1;
